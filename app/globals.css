@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #FAFAF9;
+  --color-ink: #121212;
+  --color-accent: #4B6478;
+  --color-accent-soft: #E9EDEF;
+  --color-line: #E3E2DE;
+  --color-panel: #FFFFFF;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-ink: var(--color-ink);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-line: var(--color-line);
+  --color-panel: var(--color-panel);
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Scroll reveal utility — paired with the useReveal hook */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Visible keyboard focus, kept consistent across the site */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
