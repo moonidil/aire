@@ -32,7 +32,7 @@ const FORMSPREE_ID = "xeebpglb";
 // TODO: Fill these in with her real contact details
 const CONTACTS = [
   { icon: Mail, label: "Email", value: "hello@airerealestates.com", href: "mailto:hello@airerealestates.com" },
-  { icon: Phone, label: "Phone", value: "+44 20 0000 0000", href: "tel:+442000000000" },
+  { icon: Phone, label: "Phone", value: "+44 -", href: "tel:+442000000000" },
   { icon: InstagramIcon, label: "Instagram", value: "@aire_real_estates", href: "https://instagram.com/aire_real_estates" },
   { icon: TikTokIcon, label: "TikTok", value: "@aire_real_estates", href: "https://tiktok.com/@airerealestates" },
   { icon: MapPin, label: "Location", value: "Central London, UK", href: null },

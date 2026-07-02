@@ -20,6 +20,7 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -28,20 +29,22 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-bg/80 backdrop-blur-md border-b border-line shadow-[0_1px_0_0_rgba(13,27,42,0.04)]"
-          : "bg-transparent border-b border-transparent"
+          ? "bg-bg/85 backdrop-blur-md border-b border-line shadow-[0_1px_0_0_rgba(13,27,42,0.04)]"
+          : "bg-bg/65 backdrop-blur-[2px] border-b border-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <Logo />
+      <div className="mx-auto grid max-w-[86rem] grid-cols-[1fr_auto_1fr] items-center px-6 py-3.5 lg:px-10">
+        <div className="justify-self-start">
+          <Logo />
+        </div>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden items-center gap-9 md:flex">
           {LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="group relative font-sans text-[13px] font-medium tracking-wide text-ink/80 transition-colors hover:text-ink"
+              className="group relative font-sans text-[13px] font-medium tracking-wide text-ink/75 transition-colors hover:text-ink"
             >
               {link.label}
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
@@ -51,7 +54,7 @@ export default function Navbar() {
 
         <Link
           href="/contact"
-          className="hidden rounded-full border border-ink/15 px-5 py-2.5 font-sans text-[13px] font-medium tracking-wide text-ink transition-colors hover:border-accent hover:text-accent md:inline-block"
+          className="hidden justify-self-end rounded-full border border-ink/15 px-5 py-2.5 font-sans text-[13px] font-medium tracking-wide text-ink transition-colors hover:border-accent hover:text-accent md:inline-block"
         >
           Enquire
         </Link>
@@ -62,7 +65,7 @@ export default function Navbar() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="text-ink md:hidden"
+          className="justify-self-end text-ink md:hidden"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -85,6 +88,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
