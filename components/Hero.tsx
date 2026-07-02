@@ -41,32 +41,33 @@ export default function Hero() {
         <Skyline className="h-full w-full" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-[56rem] px-6 pt-10 pb-28 lg:px-8">
-        <p className="font-sans text-[10px] font-medium tracking-[0.32em] text-accent">
-          LONDON · PREMIUM PROPERTY MANAGEMENT
-        </p>
+      <div className="relative mx-auto w-full max-w-7xl px-6 pt-10 pb-28 lg:px-10">
+        <div className="max-w-[56rem]">
+          <p className="font-sans text-[10px] font-medium tracking-[0.32em] text-accent">
+            LONDON · PREMIUM PROPERTY MANAGEMENT
+          </p>
 
-        <h1
-          style={{ fontFamily: "var(--font-instrument)" }}
-          className="mt-5 max-w-[40rem] text-[2.65rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.15rem]"
-        >
-          Your London property,
-          <br />
-          <span
+          <h1
             style={{ fontFamily: "var(--font-instrument)" }}
-            className="italic text-[#6B8CAE]"
+            className="mt-5 max-w-[40rem] text-[2.65rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.15rem]"
           >
-            working harder
-          </span>{" "}
-          for you.
-        </h1>
+            Your London property,
+            <br />
+            <span
+              style={{ fontFamily: "var(--font-instrument)" }}
+              className="italic text-[#6B8CAE]"
+            >
+              working harder
+            </span>{" "}
+            for you.
+          </h1>
 
-        <p className="mt-6 max-w-[30rem] font-sans text-[14px] leading-relaxed text-ink/60">
-          Aire manages premium central London short-let apartments end to end,
-          from listing to guest to monthly report, so owners get the income
-          without the admin.
-        </p>
-
+          <p className="mt-6 max-w-[30rem] font-sans text-[14px] leading-relaxed text-ink/60">
+            Aire manages premium central London short-let apartments end to end,
+            from listing to guest to monthly report, so owners get the income
+            without the admin.
+          </p>
+        </div>
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <Link
             href="/for-owners"
