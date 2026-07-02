@@ -38,7 +38,7 @@ export default function Hero() {
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-14 pb-20 lg:px-10">
         <p className="font-sans text-xs font-medium tracking-[0.3em] text-accent">
-          LONDON · PREMIUM PROPERTY MANAGEMENT
+          LONDON · PREMIUM PROPERTY MANAGEMENT · LIVE TEST
         </p>
 
         <h1 style={{ fontFamily: "var(--font-instrument)" }} className="mt-6 max-w-4xl text-[14vw] font-normal leading-[0.98] tracking-tight text-ink sm:text-7xl lg:text-[6.5rem]">
