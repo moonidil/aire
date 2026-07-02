@@ -33,22 +33,22 @@ export default function Hero() {
         }}
       />
 
-      {/* Skyline signature, parallax — fine line-art, softened for a premium feel */}
+      {/* Skyline signature, parallax — fine black line-art, low opacity by design */}
       <div
         ref={skylineRef}
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[360px] text-ink/60"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[300px] text-ink/45"
       >
         <Skyline className="h-full w-full" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-6xl px-6 pt-14 pb-20 lg:px-10">
-        <p className="font-sans text-xs font-medium tracking-[0.3em] text-accent">
+      <div className="relative mx-auto w-full max-w-5xl px-6 pt-10 pb-28 lg:px-8">
+        <p className="font-sans text-[11px] font-medium tracking-[0.3em] text-accent">
           LONDON · PREMIUM PROPERTY MANAGEMENT
         </p>
 
         <h1
           style={{ fontFamily: "var(--font-instrument)" }}
-          className="mt-6 max-w-4xl text-[4.4rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-7xl lg:text-[6rem] xl:text-[6.3rem]"
+          className="mt-5 max-w-3xl text-[3.7rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[4.6rem] lg:text-[5.2rem] xl:text-[5.6rem]"
         >
           Your London property,
           <br />
@@ -61,30 +61,30 @@ export default function Hero() {
           for you.
         </h1>
 
-        <p className="mt-7 max-w-lg font-sans text-base leading-relaxed text-ink/60">
+        <p className="mt-6 max-w-md font-sans text-[15px] leading-relaxed text-ink/60">
           Aire manages premium central London short-let apartments end to end,
           from listing to guest to monthly report, so owners get the income
           without the admin.
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center gap-4">
           <Link
             href="/for-owners"
-            className="rounded-full bg-ink px-7 py-3.5 font-sans text-sm font-medium tracking-wide text-white transition-transform hover:-translate-y-0.5"
+            className="rounded-full bg-ink px-6 py-3 font-sans text-sm font-medium tracking-wide text-white transition-transform hover:-translate-y-0.5"
           >
             I&apos;m an owner
           </Link>
 
           <Link
             href="/to-rent"
-            className="rounded-full border border-ink/20 px-7 py-3.5 font-sans text-sm font-medium tracking-wide text-ink transition-colors hover:border-ink/50"
+            className="rounded-full border border-ink/20 px-6 py-3 font-sans text-sm font-medium tracking-wide text-ink transition-colors hover:border-ink/50"
           >
             Find a property
           </Link>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-ink/35 sm:flex">
+      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-ink/30 sm:flex">
         <span className="font-sans text-[10px] tracking-[0.25em]">SCROLL</span>
         <ArrowDown size={14} className="animate-bounce" />
       </div>
