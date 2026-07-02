@@ -48,7 +48,7 @@ export default function Hero() {
 
         <h1
           style={{ fontFamily: "var(--font-instrument)" }}
-          className="mt-5 max-w-[46rem] text-[3rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.7rem] lg:text-[4.25rem] xl:text-[4.65rem]"
+          className="mt-5 max-w-[40rem] text-[2.65rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.15rem]"
         >
           Your London property,
           <br />
