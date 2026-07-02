@@ -33,22 +33,22 @@ export default function Hero() {
         }}
       />
 
-      {/* Skyline signature, parallax — fine black line-art, low opacity by design */}
+      {/* Skyline signature, parallax — subtle but still readable */}
       <div
         ref={skylineRef}
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[235px] text-ink/35"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[250px] text-ink/45"
       >
         <Skyline className="h-full w-full" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-[52rem] px-6 pt-6 pb-28 lg:px-8">
+      <div className="relative mx-auto w-full max-w-[56rem] px-6 pt-10 pb-28 lg:px-8">
         <p className="font-sans text-[10px] font-medium tracking-[0.32em] text-accent">
           LONDON · PREMIUM PROPERTY MANAGEMENT
         </p>
 
         <h1
           style={{ fontFamily: "var(--font-instrument)" }}
-          className="mt-5 max-w-[42rem] text-[3rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.7rem] lg:text-[4.2rem] xl:text-[4.55rem]"
+          className="mt-5 max-w-[46rem] text-[3rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.7rem] lg:text-[4.25rem] xl:text-[4.65rem]"
         >
           Your London property,
           <br />
@@ -61,7 +61,7 @@ export default function Hero() {
           for you.
         </h1>
 
-        <p className="mt-6 max-w-[29rem] font-sans text-[14px] leading-relaxed text-ink/60">
+        <p className="mt-6 max-w-[30rem] font-sans text-[14px] leading-relaxed text-ink/60">
           Aire manages premium central London short-let apartments end to end,
           from listing to guest to monthly report, so owners get the income
           without the admin.
@@ -84,7 +84,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-ink/20 sm:flex">
+      <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-ink/25 sm:flex">
         <span className="font-sans text-[10px] tracking-[0.25em]">SCROLL</span>
         <ArrowDown size={14} className="animate-bounce" />
       </div>
