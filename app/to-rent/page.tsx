@@ -236,11 +236,10 @@ export default function ToRentPage() {
                   optional
                   options={[
                     "No preference",
-                    "Knightsbridge",
-                    "Kensington",
-                    "Marylebone",
-                    "Paddington",
-                    "Mayfair",
+                    "South West",
+                    "East",
+                    "West",
+                    "Central",
                   ]}
                 />
                 <TextareaField label="Anything else" name="notes" optional />
