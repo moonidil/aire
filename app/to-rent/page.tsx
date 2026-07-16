@@ -17,7 +17,7 @@ const PROOF_POINTS = [
   },
   {
     title: "Prime locations",
-    copy: "Knightsbridge, Kensington, Marylebone, Paddington, Mayfair. Everything within reach.",
+    copy: "Central, East & South West. Everything within reach.",
   },
   {
     title: "One contact, always",
