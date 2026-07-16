@@ -42,47 +42,46 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-10 pb-28 lg:px-10">
-        <div className="max-w-[56rem]">
-          <p className="font-sans text-[10px] font-medium tracking-[0.32em] text-accent">
-            LONDON · PREMIUM PROPERTY MANAGEMENT
-          </p>
+        <p className="font-sans text-[10px] font-medium tracking-[0.32em] text-accent">
+          LONDON · PREMIUM PROPERTY MANAGEMENT
+        </p>
 
-          <h1
+        <h1
+          style={{ fontFamily: "var(--font-instrument)" }}
+          className="mt-5 max-w-[40rem] text-[2.65rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.15rem]"
+        >
+          Your London property,
+          <br />
+          <span
             style={{ fontFamily: "var(--font-instrument)" }}
-            className="mt-5 max-w-[40rem] text-[2.65rem] font-normal leading-[0.94] tracking-tight text-ink sm:text-[3.25rem] lg:text-[3.85rem] xl:text-[4.15rem]"
+            className="italic text-[#6B8CAE]"
           >
-            Your London property,
-            <br />
-            <span
-              style={{ fontFamily: "var(--font-instrument)" }}
-              className="italic text-[#6B8CAE]"
-            >
-              working harder
-            </span>{" "}
-            for you.
-          </h1>
+            working harder
+          </span>{" "}
+          for you.
+        </h1>
 
-          <p className="mt-6 max-w-[30rem] font-sans text-[14px] leading-relaxed text-ink/60">
-            Aire manages premium central London short-let apartments end to end,
-            from listing to guest to monthly report, so owners get the income
-            without the admin.
-          </p>
-        </div>
-        <div className="mt-8 flex flex-wrap items-center gap-4">
-          <Link
-            href="/for-owners"
-            className="rounded-full bg-ink px-6 py-3 font-sans text-[13px] font-medium tracking-wide text-white transition-transform hover:-translate-y-0.5"
-          >
-            I&apos;m an owner
-          </Link>
+        <p className="mt-6 max-w-[30rem] font-sans text-[14px] leading-relaxed text-ink/60">
+          Aire manages premium central London short-let apartments end to end,
+          from listing to guest to monthly report, so owners get the income
+          without the admin.
+        </p>
+      </div>
+      <div className="mt-8 flex flex-wrap items-center gap-4">
+        <Link
+          href="/for-owners"
+          className="rounded-full bg-ink px-6 py-3 font-sans text-[13px] font-medium tracking-wide text-white transition-transform hover:-translate-y-0.5"
+        >
+          I&apos;m an owner
+        </Link>
 
-          <Link
-            href="/to-rent"
-            className="rounded-full border border-ink/20 px-6 py-3 font-sans text-[13px] font-medium tracking-wide text-ink transition-colors hover:border-ink/50"
-          >
-            Find a property
-          </Link>
-        </div>
+        <Link
+          href="/to-rent"
+          className="rounded-full border border-ink/20 px-6 py-3 font-sans text-[13px] font-medium tracking-wide text-ink transition-colors hover:border-ink/50"
+        >
+          Find a property
+        </Link>
+
       </div>
 
       <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-ink/25 sm:flex">
